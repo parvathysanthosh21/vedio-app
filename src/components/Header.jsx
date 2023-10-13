@@ -1,0 +1,24 @@
+import React from 'react'
+import { Container, Navbar } from 'react-bootstrap'
+import { Link } from 'react-router-dom'
+
+function Header() {
+  return (
+<Navbar className="bg-primary">
+        <Container>
+          <Navbar.Brand>
+
+          <Link 
+          to={"/"}
+          className='fs-5'
+          style={{textDecoration:"none", color:'white'}}>
+<i className="fa-solid fa-cloud-arrow-up"></i> 
+Media Player
+
+          </Link>
+          </Navbar.Brand>
+        </Container>
+      </Navbar>  )
+}
+
+export default Header
